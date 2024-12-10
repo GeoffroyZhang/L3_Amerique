@@ -37,7 +37,18 @@ Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une aug
 
 
 
-    Présence d'illustrations
+## Présence d'illustrations
+| Type d'auteur | Ouvrages illustrés |  Ouvrages non illustrés |
+|-------|-------|------|
+| Homme d'affaires | 2 (29 %) | 5 (71 %) |
+| Scientifique | 4 (9 %) | 43 (91 %) |
+| Artiste | 1 (8 %) | 11 (92 %) |
+| Juriste | 1 (8 %) | 12 (92 %) |
+| Militaire | 2 (7 %) | 28 (93 % |
+| Politique ou administrateur | 1 (6 %) | 15 (94 %) |
+| Homme de lettres | 3 (4 %) | 68 (96 %) |
+| Religieux | 1 (3 %) | 33 (97 %) |
+| Voyageur | 0 | 14 (100 %) |
 
     Analyse des auteurs
 
