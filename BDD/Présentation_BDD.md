@@ -17,9 +17,7 @@ Notre base de données relationnelle se structure, comme toutes les bases, d'un 
 
 ## Le modèle conceptuel des données (MCD) de notre corpus
 
-**<ins>Schéma du MCD d'apès le corpus Amérique du catalogue de la BnF : </ins>**
-![MCD_Corpus_Amérique](https://github.com/user-attachments/assets/15ffb8cd-2d3a-4058-96bf-1fa9dfaf1b9e)
-
+La méthode de modélisation d'une base de données passe par plusieurs étapes préalables. Premièrement l'identification des entités, attributs et relations du MCD ; puis de l'identification de la cardinalité des relations ; enfin de la définition et de la liaison des tables. 
 
 Le MCD est l'étape préalable à la conception d'une base de données. En effet, celui-ci nous a permis, dans le cadre de ce projet, de modéliser les données du corpus au sein d'une structure organisée qui indique différents éléments :
 - Les **entités** : la chose que l'on décrit ;
@@ -34,18 +32,26 @@ Le MCD est composé de :
 - Les **relations entre les tables** et leur **signification** ;
 - Les **cardinalités**.
 
+**<ins>Schéma du MCD d'apès le corpus Amérique du catalogue de la BnF : </ins>**
+![MCD_Corpus_Amérique](https://github.com/user-attachments/assets/15ffb8cd-2d3a-4058-96bf-1fa9dfaf1b9e)
+
+
 **<ins>Explication du choix des entités, de leurs attributs et de leurs relations :</ins>**
 
-Tout d'abord nous avons identifié les entités, les attributs et leur relation, après l'analyse du corpus. Cette ébauche nous a permis de dresser notre MCD. Les entités sont représentées par des tables en forme de boîte aux angles à 90 degrés ; alors que les relations sont caractérisées par des boîtes aux angles plus arrondis et contiennent souvent des verbes (Ex. *Parle de* pour la relation de l'entité *TEXTE* et *SUJET_RAMEAU*). Ainsi, la base de données est composées de diverses tables ou entités que sont : les tables *EDITIONS*, *FONCTIONS*, *TEXTES*, *AUTEURS* et *ECRIT_PAR*. 
+Tout d'abord nous avons identifié les entités, les attributs et leur relation, après l'analyse du corpus. Cette ébauche nous a permis de dresser notre MCD. Les entités sont représentées par des tables en forme de boîte aux angles à 90 degrés ; alors que les relations sont caractérisées par des boîtes aux angles plus arrondis et contiennent souvent des verbes (Ex. *Parle de* pour la relation de l'entité *TEXTE* et *SUJETS*). Ainsi, la base de données est composées de diverses tables ou entités que sont : les tables *EDITIONS*, *FONCTIONS*, *TEXTES*, *AUTEURS* et *SUJETS*. 
 
-Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. TEXTE) caractérise l'élément que nous décrivons. L'entité TEXTE correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITION*, en effet, on part du principe que chaque texte a été édité au moins une fois. 
+Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives au texte tel que son titre, sa langue ou encore son contenu que nous pouvons trouver sur les notices bibliographiques. 
+
+L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (relation) un auteur. 
+L'entité *FONCTIONS* 
+
 Les attributs de l'entité *EDITION* permettent donc de connaître diverses informations sur la forme de l'ouvrage et son contenu. En effet, l'attribut  "Nb de pages" permet de savoir précisément le nombre de pages de l'ouvrage ce qui est intéressant si on essaie de situer le texte dans une certaine époque.  
 L'entité *SUJET_RAMEAU* permet de décrire le sujet du texte, autrement dit savoir de quoi parle le texte (Ex. L'attribut "désignation" dans la table *SUJET_RAMEAU* permet de connaître l'intitulé précis du texte).  
 
+Il se peut qu'il y ait une dépendance fonctionnelle, c'est-à-dire un lien qui existe entre 2 attributs lorsqu'un attribut détermine un second attribut (problème de redondance). Dans ces cas là, pour optimiser le MCD, nous créeons une autre entité. 
 
 
 
-Ces entités sont décritent par des champs (Ex. Titre). Autrement dit, le champ "titre" correspond au titre du texte qui correspond à l'entité *TEXTE*.  
 
 Les identifiants Ark permettent de retrouver les éléments plus facilement. 
 
