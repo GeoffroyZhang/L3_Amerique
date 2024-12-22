@@ -40,9 +40,9 @@ Le MCD est composé de :
 
 Tout d'abord nous avons identifié les entités, les attributs et leur relation, après l'analyse du corpus. Cette ébauche nous a permis de dresser notre MCD. Les entités sont représentées par des tables en forme de boîte aux angles à 90 degrés ; alors que les relations sont caractérisées par des boîtes aux angles plus arrondis et contiennent souvent des verbes (Ex. *Parle de* pour la relation de l'entité *TEXTE* et *SUJETS*). Ainsi, la base de données est composées de diverses tables ou entités que sont : les tables *EDITIONS*, *FONCTIONS*, *TEXTES*, *AUTEURS* et *SUJETS*. 
 
-Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives au texte tel que son titre, sa langue ou encore son contenu que nous pouvons trouver sur les notices bibliographiques. 
+Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives au texte tel que son titre, sa langue ou encore son contenu. Ces attributs ont été choisis car nous les avons repérer sur les notices bibliographiques. 
 
-L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (relation) un auteur. 
+L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (relation) un auteur d'où sa relation avec l'entité *TEXTES*. L'entité *AUTEURS* nous permet de connaître diverses informations sur 
 L'entité *FONCTIONS* 
 
 Les attributs de l'entité *EDITION* permettent donc de connaître diverses informations sur la forme de l'ouvrage et son contenu. En effet, l'attribut  "Nb de pages" permet de savoir précisément le nombre de pages de l'ouvrage ce qui est intéressant si on essaie de situer le texte dans une certaine époque.  
@@ -59,13 +59,10 @@ Les identifiants Ark permettent de retrouver les éléments plus facilement.
 
 Les cardinalités indiquent le nombre d'entités pouvant entrer en relation. Pour caractériser ces relations, nous prenons en compte le maximum, c'est-à-dire le deuxième élément de la cardinalité. 
 
-<ins>On a 3 types de cardinalité :</ins> 
-
-1 : 1 = fusion des tables ; 
-
-1 : n = deux tables séparées avec une clé étrangère nécessaire dans celle de l'entité ou de l'attribut multiple ;
-
-n : n = table de jonction. 
+<ins>On a 3 types de cardinalité :</ins>   
+- 1 : 1 = fusion des tables ;   
+- 1 : n = deux tables séparées avec une clé étrangère nécessaire dans celle de l'entité ou de l'attribut multiple ;    
+- n : n = table de jonction. 
 
 Pour ce qui est de notre MCD, nous avons une relation de n : 1 entre la table *TEXTES* et la table *EDITIONS*, illustrée par la relation *Publié dans*, autrement dit, un texte est publié au minimum une fois et au maximum n fois, c'est-à-dire plusieurs fois. Au contraire, l'édition ne fait référence qu'à un et un seul texte. 
 Nous avons également une relation de n : 1 entre les tables *TEXTES* et *SUJETS*, illustrée par la relation *Parle de*. En effet, Un texte peut parler de un ou plusieurs sujets et un sujet ne peut que concerner un seul texte. 
@@ -73,7 +70,7 @@ Nous avons également une relation de n : 1 entre les tables *TEXTES* et *SUJETS
 
 **<ins>Utilisation des identifiants ARK comme clés primaires :</ins>**
 
-La clé primaire est un champ qui doit être présent dans chaque table avec une numérotation unique. 
+La clé primaire est un champ qui doit être présent dans chaque table avec une numérotation unique. Le type de données de la clé primaire est un entier pour faciliter 
 La clé étrangère est un champ qui fait référence à la clé primaire d'une autre table. 
 On ne considère que le maximum. 
 
