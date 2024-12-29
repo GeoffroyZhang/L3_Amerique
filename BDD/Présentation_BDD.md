@@ -42,18 +42,13 @@ Tout d'abord nous avons identifié les entités, les attributs et leur relation,
 
 Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives au texte tel que son titre, sa langue ou encore son contenu. Ces attributs ont été choisis car nous les avons repérer sur les notices bibliographiques. 
 
-L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (relation) un auteur d'où sa relation avec l'entité *TEXTES*. L'entité *AUTEURS* nous permet de connaître diverses informations sur 
-L'entité *FONCTIONS* 
-
 Les attributs de l'entité *EDITION* permettent donc de connaître diverses informations sur la forme de l'ouvrage et son contenu. En effet, l'attribut  "Nb de pages" permet de savoir précisément le nombre de pages de l'ouvrage ce qui est intéressant si on essaie de situer le texte dans une certaine époque.  
-L'entité *SUJET_RAMEAU* permet de décrire le sujet du texte, autrement dit savoir de quoi parle le texte (Ex. L'attribut "désignation" dans la table *SUJET_RAMEAU* permet de connaître l'intitulé précis du texte).  
+L'entité *SUJET_RAMEAU* permet de décrire le sujet du texte, autrement dit, de savoir de quoi parle le texte (Ex. L'attribut "désignation" dans la table *SUJETS* permet de connaître l'intitulé précis du texte). Il se peut qu'il y ait une dépendance fonctionnelle, c'est-à-dire un lien qui existe entre 2 attributs lorsqu'un attribut détermine un second attribut (problème de redondance). Dans ces cas là, pour optimiser le MCD, nous créeons une autre entité, c'est le cas de l'entité *SUJETS*.
 
-Il se peut qu'il y ait une dépendance fonctionnelle, c'est-à-dire un lien qui existe entre 2 attributs lorsqu'un attribut détermine un second attribut (problème de redondance). Dans ces cas là, pour optimiser le MCD, nous créeons une autre entité. 
+L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (la relation) un auteur d'où sa relation avec l'entité *TEXTES*, modélisée par la table de jonction *ECRIT_PAR*. L'entité *AUTEURS* nous permet de connaître diverses informations sur ce qui caractérise l'auteur (attributs), c'est-à-dire son nom, son prénom, son sexe, sa date de naissance, son lieu de naissance, sa date de décès, son lieu de décès ou encore sa nationalité. 
+ 
+L'entité *FONCTIONS* décrit la fonction d'un auteur d'où la relation "Exerce" avec l'entité *AUTEURS*. En effet, via ses attributs on peut obtenir des informations précises sur la fonction de l'auteur tel que son intitulé, la catégorie de celle-ci ou encore le lieu d'exercice de la fonction. 
 
-
-
-
-Les identifiants Ark permettent de retrouver les éléments plus facilement. 
 
 **<ins>Explication des cardinalités :</ins>**
 
@@ -64,15 +59,18 @@ Les cardinalités indiquent le nombre d'entités pouvant entrer en relation. Pou
 - 1 : n = deux tables séparées avec une clé étrangère nécessaire dans celle de l'entité ou de l'attribut multiple ;    
 - n : n = table de jonction. 
 
+La clé étrangère, c'est-à-dire le champ qui fait référence à la clé primaire d'une notre table, est nécessaire dans le chap de l'entité ou de l'attribut multiple. 
+
 Pour ce qui est de notre MCD, nous avons une relation de n : 1 entre la table *TEXTES* et la table *EDITIONS*, illustrée par la relation *Publié dans*, autrement dit, un texte est publié au minimum une fois et au maximum n fois, c'est-à-dire plusieurs fois. Au contraire, l'édition ne fait référence qu'à un et un seul texte. 
 Nous avons également une relation de n : 1 entre les tables *TEXTES* et *SUJETS*, illustrée par la relation *Parle de*. En effet, Un texte peut parler de un ou plusieurs sujets et un sujet ne peut que concerner un seul texte. 
 
 
 **<ins>Utilisation des identifiants ARK comme clés primaires :</ins>**
 
-La clé primaire est un champ qui doit être présent dans chaque table avec une numérotation unique. Le type de données de la clé primaire est un entier pour faciliter 
-La clé étrangère est un champ qui fait référence à la clé primaire d'une autre table. 
-On ne considère que le maximum. 
+Un identifiant ARK (Archival Resource Key) est un format d'identifiant créé en 2001 par la California Digital Library permettant d'identifier des ressources de tous types : physique, numériques et immatériels. Pour plus d'informations sur l'identifiant ARK veuillez suivre ce lien : [L'identifiant ARK](https://www.bnf.fr/fr/lidentifiant-ark-archival-resource-key.  
+
+Les identifiants ARK permettent de retrouver les éléments plus facilement. Ils permettent, dans notre cas d'identifier une notice bibliographique beaucoup plus précisément. De fait, il est logique de mettre l'identifiant ARK comme clé primaire de chaque ouvrage. 
+La clé primaire est un champ doit être présent dans chaque table avec une numérotation unique. Le type de données de la clé primaire est un entier pour faciliter 
 
 
 ## Le dictionnaire des données 
