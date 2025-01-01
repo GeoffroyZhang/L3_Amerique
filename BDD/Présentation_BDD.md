@@ -1,19 +1,7 @@
 # Structure de la base de données (Geoffroy Zhang)
-## Présentation du MCD
-    - Inclure le schéma
-    - Explication du choix des entités, de leurs attributs et de leurs relations
-    - Explication des cardinalités
-    - Utilisation des identifiants ARK comme clés primaires
-## Dictionnaire des données
-## Recodage des données
-    - Siècles des éditions
-    - Régions couvertes par les ouvrages
-    - Fonctions/métiers des auteurs
 
-# Structure de la base de données (Geoffroy Zhang)
-
-Inventée par le mathématicien Edgar F. Codd, la base de données relationnelle se définie comme : "un ensemble structuré de données reliées entre elles et stockées de manière cohérentes, sans redondance inutile" (Marc Humbert, *Les bases de données*, Paris, Hermes, 1991). 
-Notre base de données relationnelle se structure, comme toutes les bases, d'un ensemble de tables et de divers autres éléments que nous expliquerons ci-dessous.  
+Inventée par le mathématicien Edgar F. Codd, la base de données relationnelle se définit comme : "un ensemble structuré de données reliées entre elles et stockées de manière cohérente, sans redondance inutile" (Marc Humbert, *Les bases de données*, Paris, Hermes, 1991). 
+Notre base de données relationnelle se structure, comme toutes les bases, d'un ensemble de tables et de divers autres éléments que nous expliquerons ci-dessous. Cette base de données a été créée sur la base du corpus d'ouvrages sur l'Amérique issu du catalogue général de la BnF. 
 
 ## Le modèle conceptuel des données (MCD) de notre corpus
 
@@ -25,6 +13,7 @@ Le MCD est l'étape préalable à la conception d'une base de données. En effet
 - Les **relations** : les relaations entre les entités.
 
 Le MCD est composé de : 
+
 - Les **tables** ;
 - Leurs **champs** ;
 - Leur **type de donnée** (int, str, booléen); 
@@ -35,10 +24,11 @@ Le MCD est composé de :
 **<ins>Schéma du MCD d'apès le corpus Amérique du catalogue de la BnF : </ins>**
 ![MCD_Corpus_Amérique](https://github.com/user-attachments/assets/15ffb8cd-2d3a-4058-96bf-1fa9dfaf1b9e)
 
+Le MCD a été crée sur la base du corpus d'ouvrages sur l'Amérique du catalogue général de la BnF. 
 
 **<ins>Explication du choix des entités, de leurs attributs et de leurs relations :</ins>**
 
-Tout d'abord nous avons identifié les entités, les attributs et leur relation, après l'analyse du corpus. Cette ébauche nous a permis de dresser notre MCD. Les entités sont représentées par des tables en forme de boîte aux angles à 90 degrés ; alors que les relations sont caractérisées par des boîtes aux angles plus arrondis et contiennent souvent des verbes (Ex. *Parle de* pour la relation de l'entité *TEXTE* et *SUJETS*). Ainsi, la base de données est composées de diverses tables ou entités que sont : les tables *EDITIONS*, *FONCTIONS*, *TEXTES*, *AUTEURS* et *SUJETS*. 
+Tout d'abord, nous avons identifié les entités, les attributs et leur relation, après l'analyse du corpus. Cette ébauche nous a permis de dresser notre MCD. Les entités sont représentées par des tables en forme de boîte aux angles à 90 degrés ; alors que les relations sont caractérisées par des boîtes aux angles plus arrondis et contiennent souvent des verbes (Ex. *Parle de* pour la relation de l'entité *TEXTE* et *SUJETS*). Ainsi, la base de données est composées de diverses tables ou entités que sont : les tables *EDITIONS*, *FONCTIONS*, *TEXTES*, *AUTEURS* et *SUJETS*. 
 
 Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives au texte tel que son titre, sa langue ou encore son contenu. Ces attributs ont été choisis car nous les avons repérer sur les notices bibliographiques. 
 
@@ -75,7 +65,76 @@ La clé primaire est un champ doit être présent dans chaque table avec une num
 
 ## Le dictionnaire des données 
 
-Le dictionnaire des données est un référentiel d'informations relatif aux bases de données. Autrement dit, c'est une liste des informations que l'on veut enregistrer dans la base de données. C'est la description complète des chanps de chaque table (nom, type, description). Par exemple, dans notre MCD, le champ "Prénom" de la colonne "Auteur" a pour type un entier avec une description sur le nom de famille. 
+Le dictionnaire des données est un référentiel d'informations relatif aux bases de données. Autrement dit, c'est une liste des informations que l'on veut enregistrer dans la base de données. C'est la description complète des champs de chaque table (nom, type, description). Par exemple, dans notre MCD, le champ "Prénom" de la colonne "Auteur" a pour type un entier avec une description sur le nom de famille. Ainsi, le dictionnaire de données décrit les différentes informations d'une base de données.
+
+Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *FONCTIONS* : 
+
+| Nom | Type |Remarques|
+| ----------- | ----------- | ----------- |
+| ID_fonction | Entier | Clé primaire |
+| Intitule_fonction | Texte court | Intitulé de la fonction de l'auteur |
+| Catégorie_fonction | Texte court | Catégorie de la fonction de l'auteur |
+| Catégorie_principale | Booléen | Désigne la caractère principal du métier ou non |
+| Lieu_fonction | Texte long | Lieu d'exerice de la fonction |
+| Ref_auteur | Entier | Clé étrangère faisant référence à la clé primaire ID_Ark_auteur de la table *AUTEURS* |
+
+Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *AUTEURS* : 
+
+| Nom | Type |Remarques|
+| ----------- | ----------- | ----------- |
+| ID_ARK_auteur | Texte court | Clé primaire |
+| Nom | Texte court | Nom complet de l'auteur |
+| Prenom | Texte court | Prénom complet de l'auteur |
+| Sexe | Texte court | Sexe de l'auteur |
+| Nationalite | Texte court | Nationalité de l'auteur |
+| Date_naissance | Entier | Date de naissance de l'auteur |
+| Lieu_naissance | Texte court | Lieu de naissance de l'auteur |
+| Date_deces | Entier | Date de décès de l'auteur |
+| Lieu_deces | Texte court | Lieu de décès de l'auteur |
+
+Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *ECRIT_PAR* : 
+
+| Nom | Type |Remarques|
+| ----------- | ----------- | ----------- |
+| ID_ecrit_par| Entier | Clé primaire |
+| Ref_Ark_auteur | Texte court | Clé étrangère faisant référence à la clé primaire ID_auteur de la table *AUTEURS* |
+| Ref_texte | Entier | Clé étrangère faisant référence à la clé primaire ID_texte de la table *TEXTES* |
+| Role | Texte court | Rôle de l'auteur |
+
+Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *TEXTES* : 
+
+| Nom | Type |Remarques|
+| ----------- | ----------- | ----------- |
+| ID_texte | Entier | Clé primaire |
+| Titre | Texte court | Titre complet de l'ouvrage |
+| Langue | Texte court | Langue de l'ouvrage |
+| Region | Texte court | Région de l'ouvrage |
+| Contenu texte | Texte long | Contenu de l'ouvrage |
+
+Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *EDITIONS* : 
+
+| Nom | Type |Remarques|
+| ----------- | ----------- | ----------- |
+| ID_edition | Entier | Clé primaire |
+| Date_edition_inf | Entier | Date d'édition inférieure de l'ouvrage |
+| Date_edition_sup | Entier | Date d'édition supérieure de l'ouvrage |
+| Siecle_edition | Entier | Le siècle d'édition de l'ouvrage |
+| Lieu_edition | Texte court | Le lieu d'édition de l'ouvrage |
+| Nom_edition | Texte court | Le nom de l'éditeur de l'ouvrage |
+| Format | Texte court | Le format du texte |
+| Illustrations | Booléen | La présence d'illustrations ou non |
+| Nb_pages | Entier | Le nombre de pages |
+| Nb_volumes | Entier | Le nombre de volumes |
+| Taille | Entier | La taille de l'ouvrage |
+| Ref_texte | Entier | Clé étrangère faisant référence à la clé primaire ID_texte de la table *TEXTES* |
+
+Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *SUJETS* : 
+
+| Nom | Type |Remarques|
+| ----------- | ----------- | ----------- |
+| ID_sujet | Entier | Clé primaire |
+| Désignation | Texte court | Sujet de l'ouvrage |
+| Ref_ARK_edition | Entier | Clé étrangère faisant référence à la clé primaire ID_edition de la table *EDITIONS* |
 
 ## Recodage des données 
 
@@ -93,6 +152,12 @@ Nous avons ajouté, à l'aide de requêtes SQL (Structured Query Language), une 
 
 Ainsi, ces requêtes nous aide clairement à identifier quel siècle à été le plus prolifique, en effet, le XIXe siècle ressort le plus souvent. 
 
+Nous avons égalemment, dans la table *AUTEURS* ajouter manuellement les auteurs là où il en manque. Cela a été possible grâce à l'identifiant ARK qui nous renvoie, comme dit précédement, sur les notices bibliographiques puis sur les notices de personne, nous donnant ainsi des informations sur le nom, prénom et le genre de l'auteur en question. 
+
+Dans la table *FONCTIONS*, nous avons associé un profil à chaque auteur et nous avons également définit la catégorie de la fonction. 
+
+Enfin, dans la table *TEXTES*, nous avons pu, grâce à un logiciel de textométrie (TXM), associer les textes à une région principale principale pour ceux dont nous avions les informations précises. 
+
 **<ins>Les régions couvertes par les ouvrages :</ins>**
 
 Avec l'utilisation du logiciel de textométrie TXM, nous avons pu situer les principales zones géographiques couvertes par les ouvrages du corpus. 
@@ -106,5 +171,3 @@ Il est intéressant de connaître la fonction de l'auteur, mais bien souvent, ce
 Requête SQL permettant de connaître la fonction principale pour chaque auteur :  
 
 `SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction FROM FONCTIONS WHERE Categorie_principale = 1`
-
-
