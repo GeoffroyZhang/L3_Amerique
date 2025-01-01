@@ -1,7 +1,7 @@
 # Structure de la base de données (Geoffroy Zhang)
 
-Inventée par le mathématicien Edgar F. Codd, la base de données relationnelle se définit comme : "un ensemble structuré de données reliées entre elles et stockées de manière cohérente, sans redondance inutile" (Marc Humbert, *Les bases de données*, Paris, Hermes, 1991). 
-Notre base de données relationnelle se structure, comme toutes les bases, d'un ensemble de tables et de divers autres éléments que nous expliquerons ci-dessous. Cette base de données a été créée sur la base du corpus d'ouvrages sur l'Amérique issu du catalogue général de la BnF. 
+Inventée par le mathématicien Edgar F. Codd, la base de données relationnelle se définit comme : "un ensemble structuré de données reliées entre elles et stockées de manière cohérente, sans redondance inutile" (Marc Humbert, *Les bases de données*, Paris, Hermes, 1991).
+Notre base de données relationnelle se structure, comme toutes les bases, d'un ensemble de tables et de divers autres éléments que nous expliquerons ci-dessous. Cette base de données a été créée sur la base du corpus d'ouvrages sur l'Amérique issu du catalogue général de la BnF.
 
 ## Le modèle conceptuel des données (MCD) de notre corpus
 
@@ -10,13 +10,13 @@ La méthode de modélisation d'une base de données passe par plusieurs étapes 
 Le MCD est l'étape préalable à la conception d'une base de données. En effet, celui-ci nous a permis, dans le cadre de ce projet, de modéliser les données du corpus au sein d'une structure organisée qui indique différents éléments :
 - Les **entités** : la chose que l'on décrit ;
 - Les **attributs** : ce qui décrit ou caractérise une chose ;
-- Les **relations** : les relaations entre les entités.
+- Les **relations** : les relations entre les entités.
 
 Le MCD est composé de : 
 
 - Les **tables** ;
 - Leurs **champs** ;
-- Leur **type de donnée** (int, str, booléen); 
+- Leur **type de donnée** (entier, texte, booléen); 
 - Les **clés primaires** et **étrangères** ;
 - Les **relations entre les tables** et leur **signification** ;
 - Les **cardinalités**.
@@ -30,42 +30,39 @@ Le MCD a été crée sur la base du corpus d'ouvrages sur l'Amérique du catalog
 
 Tout d'abord, nous avons identifié les entités, les attributs et leur relation, après l'analyse du corpus. Cette ébauche nous a permis de dresser notre MCD. Les entités sont représentées par des tables en forme de boîte aux angles à 90 degrés ; alors que les relations sont caractérisées par des boîtes aux angles plus arrondis et contiennent souvent des verbes (Ex. *Parle de* pour la relation de l'entité *TEXTE* et *SUJETS*). Ainsi, la base de données est composées de diverses tables ou entités que sont : les tables *EDITIONS*, *FONCTIONS*, *TEXTES*, *AUTEURS* et *SUJETS*. 
 
-Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus et le détail des ouvrages. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives au texte tel que son titre, sa langue ou encore son contenu. Ces attributs ont été choisis car nous les avons repérer sur les notices bibliographiques. 
+Le choix des entités a été le produit d'une réflexion en classe après avoir analyser la structure du corpus. En effet, chaque nom d'entité (Ex. *TEXTES*) caractérise l'élément que nous décrivons. L'entité *TEXTES* correspond à un texte de la base de données ; il est donc important de connaître son contexte d'édition d'où la relation *Publié dans* avec l'entité *EDITIONS*, en effet, on part du principe que chaque texte a été édité au moins une fois. De même, il est intéressant de connaître le ou les sujets du texte en question d'où la relation "Parle de" entre l'entité *TEXTES* et l'entité *SUJETS*, en effet, un texte parle forcément d'un ou plusieurs sujets. Ainsi, les attributs - ce qui décrit ou caractérise une chose - de l'entité *TEXTES* décrivent des informations relatives à l'ouvrage tel que son titre, sa langue ou encore son contenu. Ces attributs ont été choisis car nous les avons récupérer sur les notices bibliographiques qui donnent des informations sur les ouvrages. De même pour les attributs de l'entité *EDITION* qui permettent donc de connaître diverses informations sur la forme de l'ouvrage et son contenu. En effet, l'attribut  "Nb de pages" permet de savoir précisément le nombre de pages de l'ouvrage ce qui est intéressant si on essaie de situer le texte dans une certaine époque. L'entité *SUJETS* permet de décrire le sujet du texte, autrement dit, de savoir de quoi parle le texte (Ex. L'attribut "désignation" dans la table *SUJETS* permet de connaître l'intitulé précis du texte). Il se peut qu'il y ait une dépendance fonctionnelle, c'est-à-dire un lien qui existe entre 2 attributs lorsqu'un attribut détermine un second attribut (problème de redondance). Dans ces cas là, pour optimiser le MCD, nous créeons une autre entité, c'est le cas de l'entité *SUJETS*. Ainsi, ces attributs ont été choisis car on peut les retrouver sur les notices biblioographiques.  
 
-Les attributs de l'entité *EDITION* permettent donc de connaître diverses informations sur la forme de l'ouvrage et son contenu. En effet, l'attribut  "Nb de pages" permet de savoir précisément le nombre de pages de l'ouvrage ce qui est intéressant si on essaie de situer le texte dans une certaine époque.  
-L'entité *SUJET_RAMEAU* permet de décrire le sujet du texte, autrement dit, de savoir de quoi parle le texte (Ex. L'attribut "désignation" dans la table *SUJETS* permet de connaître l'intitulé précis du texte). Il se peut qu'il y ait une dépendance fonctionnelle, c'est-à-dire un lien qui existe entre 2 attributs lorsqu'un attribut détermine un second attribut (problème de redondance). Dans ces cas là, pour optimiser le MCD, nous créeons une autre entité, c'est le cas de l'entité *SUJETS*.
-
-L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (la relation) un auteur d'où sa relation avec l'entité *TEXTES*, modélisée par la table de jonction *ECRIT_PAR*. L'entité *AUTEURS* nous permet de connaître diverses informations sur ce qui caractérise l'auteur (attributs), c'est-à-dire son nom, son prénom, son sexe, sa date de naissance, son lieu de naissance, sa date de décès, son lieu de décès ou encore sa nationalité. 
- 
-L'entité *FONCTIONS* décrit la fonction d'un auteur d'où la relation "Exerce" avec l'entité *AUTEURS*. En effet, via ses attributs on peut obtenir des informations précises sur la fonction de l'auteur tel que son intitulé, la catégorie de celle-ci ou encore le lieu d'exercice de la fonction. 
-
+L'entité *AUTEURS* est tout aussi central dans le MCD, en effet, le corpus ducumentaire sur l'Amérique nous donne des informations sur les auteurs et, de plus, chaque texte est forcément écrit par (la relation) un auteur d'où sa relation avec l'entité *TEXTES*, modélisée par la table de jonction *ECRIT_PAR*. L'entité *AUTEURS* nous permet de connaître diverses informations sur ce qui caractérise l'auteur (attributs), c'est-à-dire son nom, son prénom, son sexe, sa date de naissance, son lieu de naissance, sa date de décès, son lieu de décès ou encore sa nationalité. Il peut être intéressant de connaîytre la nationalité des auteurs qui écrivent sur l'Amérique et l'époque à laquelle ils ont écrit. Ces informations peuvent être trouvées sur les notices de personne du catalogue général de la BnF. L'entité *FONCTIONS* décrit la fonction d'un auteur d'où la relation "Exerce" avec l'entité *AUTEURS*. En effet, via ses attributs on peut obtenir des informations précises sur la fonction de l'auteur tel que son intitulé, la catégorie de celle-ci ou encore son lieu d'exercice. La clé étrangère "Ref_auteur" fait référence à la clé primaire de la table *AUTEURS*. En effet, on place la clé étrangère dans la table de l'entité multiple. 
 
 **<ins>Explication des cardinalités :</ins>**
 
 Les cardinalités indiquent le nombre d'entités pouvant entrer en relation. Pour caractériser ces relations, nous prenons en compte le maximum, c'est-à-dire le deuxième élément de la cardinalité. 
 
 <ins>On a 3 types de cardinalité :</ins>   
-- 1 : 1 = fusion des tables ;   
-- 1 : n = deux tables séparées avec une clé étrangère nécessaire dans celle de l'entité ou de l'attribut multiple ;    
-- n : n = table de jonction. 
+- 1:1 = fusion des tables : on a une correspondance ;  
+- 1:n = deux tables séparées avec une clé étrangère nécessaire dans celle de l'entité ou de l'attribut multiple : on a une ou plusieurs correspondances ; 
+- n:n = table de jonction. 
+Le caractère se situant à gauche désigne le minimum et celui de droit le maximum. 
+La clé étrangère, c'est-à-dire le champ qui fait référence à la clé primaire d'une notre table, est nécessaire dans le champ de l'entité ou de l'attribut multiple.
 
-La clé étrangère, c'est-à-dire le champ qui fait référence à la clé primaire d'une notre table, est nécessaire dans le chap de l'entité ou de l'attribut multiple. 
+*Pour plus d'informations sur les cardinalités : [IBM](https://www.ibm.com/docs/fr/cognos-analytics/11.1.0?topic=r-cardinality)*
 
-Pour ce qui est de notre MCD, nous avons une relation de n : 1 entre la table *TEXTES* et la table *EDITIONS*, illustrée par la relation *Publié dans*, autrement dit, un texte est publié au minimum une fois et au maximum n fois, c'est-à-dire plusieurs fois. Au contraire, l'édition ne fait référence qu'à un et un seul texte. 
-Nous avons également une relation de n : 1 entre les tables *TEXTES* et *SUJETS*, illustrée par la relation *Parle de*. En effet, Un texte peut parler de un ou plusieurs sujets et un sujet ne peut que concerner un seul texte. 
-
+Pour ce qui est de notre MCD, nous avons une relation de n:1 entre la table *TEXTES* et la table *EDITIONS*, illustrée par la relation *Publié dans*, autrement dit, un texte est publié au minimum une fois et au maximum n fois, c'est-à-dire plusieurs fois. Au contraire, l'édition ne fait référence qu'à un et un seul texte. 
+Nous avons également une relation de n:1 entre les tables *TEXTES* et *SUJETS*, illustrée par la relation *Parle de*. En effet, Un texte peut parler de un ou plusieurs sujets et un sujet ne peut que concerner un seul texte. 
+Il se peut qu'un auteur ait écrit plusieurs textes, autrement dit, que plusieurs textes ont été écrit par par un auteur ou plusieurs auteurs. En effet, pour éviter de la redondance dans les tables, nous créons une table de jonction (relation n:n) illustrée par table *ECRIT_PAR* qui contient deux clés étrangères qui font références aux clés primaires des tables *TEXTES* et *AUTEURS*. Ainsi, on crée une table intermédiaire symbolisée par la relation entre les deux tables de relation n:n puisqu'il n'est pas possible de mettre de clé étrangère dans l'une ou l'autre table. 
+Enfin, la table *AUTEURS* est liée à la table *FONCTIONS* par une relation de 1:n. Autrement dit, un auteur a pu exercer 0, 1 ou plusieurs fonctions et une fonction a été exercée par au moins un auteur et un seul. 
 
 **<ins>Utilisation des identifiants ARK comme clés primaires :</ins>**
 
 Un identifiant ARK (Archival Resource Key) est un format d'identifiant créé en 2001 par la California Digital Library permettant d'identifier des ressources de tous types : physique, numériques et immatériels. Pour plus d'informations sur l'identifiant ARK veuillez suivre ce lien : [L'identifiant ARK](https://www.bnf.fr/fr/lidentifiant-ark-archival-resource-key.  
 
-Les identifiants ARK permettent de retrouver les éléments plus facilement. Ils permettent, dans notre cas d'identifier une notice bibliographique beaucoup plus précisément. De fait, il est logique de mettre l'identifiant ARK comme clé primaire de chaque ouvrage. 
-La clé primaire est un champ doit être présent dans chaque table avec une numérotation unique. Le type de données de la clé primaire est un entier pour faciliter 
+Les identifiants ARK permettent de retrouver les éléments plus facilement. Ils renvoient à des notices  bibliographiques et à des notices de personne. Par exemple, l'identifiant ARK/clé primaire de la table *AUTEURS* renvoie à une notice de personne : [Exemple de notice de personne](https://catalogue.bnf.fr/ark:/12148/cb13185865d). L'identifiant ARK de la table *EDITIONS* renvoie à une notice bibliographique : [Exemple de notice bibliographique](https://catalogue.bnf.fr/ark:/12148/cb300062607). La clé primaire est un champ qui doit être présent dans chaque table avec une numérotation unique. Le type de données de la clé primaire est souvent un entier, mais dans le cas des identifiants ARK, il s'agit d'un texte court.
 
+Dans le cadre de notre base de données, l'utilisation des identifiants ARK permet directement de renvoyer à l'auteur ou à l'édition précise du texte. Il permet l'identification direct de la ressource, ce n'est pas un permalien, c'est-à-dire une URL. Ainsi, l'identifiant ARK est unique ce qui convient parfaitement à la définition d'une clé primaire. 
 
 ## Le dictionnaire des données 
 
-Le dictionnaire des données est un référentiel d'informations relatif aux bases de données. Autrement dit, c'est une liste des informations que l'on veut enregistrer dans la base de données. C'est la description complète des champs de chaque table (nom, type, description). Par exemple, dans notre MCD, le champ "Prénom" de la colonne "Auteur" a pour type un entier avec une description sur le nom de famille. Ainsi, le dictionnaire de données décrit les différentes informations d'une base de données.
+Le dictionnaire des données est un référentiel d'informations relatif aux bases de données. Autrement dit, c'est une liste des informations que l'on veut enregistrer dans la base de données. C'est la description complète des champs de chaque table (nom, type, description). Par exemple, dans notre MCD, le champ "Prénom" de la table "AUTEURS" a pour type un entier avec une description sur le nom de famille. Ainsi, le dictionnaire de données décrit les différentes informations d'une base de données.
 
 Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Amérique pour la table *FONCTIONS* : 
 
@@ -138,6 +135,8 @@ Exemple de dictionnaire des données du projet sur le corpus d'ouvrages sur l'Am
 
 ## Recodage des données 
 
+Le recodage des données se fait par un système de gestion de base de données, c'est-à-dire un logiciel permettant aux utilisateurs de créer et de gérer des bases de données. Notre base de données est hébergée sur le logiciel *phpMyAdmin* et sur LibreOffice Base. 
+
 **<ins>Les siècles des éditions :</ins>**
 
 Nous avons ajouté, à l'aide de requêtes SQL (Structured Query Language), une colonne "Siècle_edition" dans la table *EDITIONS* de notre base de données afin de préciser le siècle - la date n'étant pas souvent claire - d'édition de l'ouvrage. Ces requêtes ont été appliquées dans le menu SQL, dans la fenêtre principale de la base de données, sur le logiciel Base d'OpenOffice.
@@ -152,22 +151,37 @@ Nous avons ajouté, à l'aide de requêtes SQL (Structured Query Language), une 
 
 Ainsi, ces requêtes nous aide clairement à identifier quel siècle à été le plus prolifique, en effet, le XIXe siècle ressort le plus souvent. 
 
-Nous avons égalemment, dans la table *AUTEURS* ajouter manuellement les auteurs là où il en manque. Cela a été possible grâce à l'identifiant ARK qui nous renvoie, comme dit précédement, sur les notices bibliographiques puis sur les notices de personne, nous donnant ainsi des informations sur le nom, prénom et le genre de l'auteur en question. 
+**<ins>Les auteurs manquants :</ins>**
 
-Dans la table *FONCTIONS*, nous avons associé un profil à chaque auteur et nous avons également définit la catégorie de la fonction. 
-
-Enfin, dans la table *TEXTES*, nous avons pu, grâce à un logiciel de textométrie (TXM), associer les textes à une région principale principale pour ceux dont nous avions les informations précises. 
+Nous avons égalemment, dans la table *AUTEURS* ajouter manuellement les auteurs là où il en manque via le système de gestion de base de données. Cela a été possible grâce à l'identifiant ARK qui nous renvoie, comme dit précédement, sur les notices bibliographiques puis sur les notices de personne, nous donnant ainsi des informations sur le nom, prénom et le genre de l'auteur en question. 
 
 **<ins>Les régions couvertes par les ouvrages :</ins>**
 
-Avec l'utilisation du logiciel de textométrie TXM, nous avons pu situer les principales zones géographiques couvertes par les ouvrages du corpus. 
+Avec l'utilisation du logiciel de textométrie TXM, nous avons pu situer les principales zones géographiques couvertes par les ouvrages du corpus. Nous avons sélectionné les lieux qui revenaient le plus souvent afin de défénir des catégories géographiques. Nous avons ainsi identifié plusieurs catégories géographiques que sont : les régions de l'ouest des Etats-Unis, les Antilles/îles, les régions de l'est des Etats-Unis, l'Amérique latine, la Louisiane et le Canada. On associe une région principale à chaque texte de la table *TEXTES*. Enfin avec l'aide de requête SQL, nous avons mis à jour la base de données et notamment la colonne "Region" de la table *TEXTES* avec la requête suivante : 
+
+`SELECT * FROM TEXTES 
+UPDATE TEXTES SET Region = 'Nom de la catégorie' 
+WHERE Titre LIKE '%Mot recherché%'`
+
+Par exemple, pour les ouvrages parlant des Antilles/îles nous utilisons la requête suivante : 
+
+`SELECT * FROM TEXTES
+UPDATE TEXTES SET Region ='Antilles/îles'
+WHERE Titre LIKE '%Antilles%'
+OR Titre LIKE '%Martinique%'
+OR Titre LIKE '%Domingue%'
+OR Titre LIKE '%Guadeloupe%'`
+
+Ainsi, pour tous les ouvrages qui contiennent, dans leur titre, le mot "Antilles", "Martinique", "Domingue" et "Guadeloupe", la catégorie "Antilles/îles" sera placé dans le champ "Region". 
 
 **<ins>Les fonctions/métiers des auteurs :</ins>**
 
-Dans la table *FONCTIONS*, chaque auteur est identifié par un "ID_fonction" unique (clé primaire). On connaît également, à travers ses attributs, l'intulé de la fonction, la catégorie de cette fonction ou encore le lieu de son exercice. Cette table est rattachée à la table *AUTEURS* par la clé étrangère "Ref_auteur" ce qui nous permet d'avoir des informations sur l'auteur, autrement dit, celui qui exerce la focntion. 
+Le logiciel TXM nous a également permis de catégoriser les fonctions des auteurs et de créer des catégories socio-professionnelles. Nous avons ainsi identifié plusieurs catégories socio-professionnelles que sont : les hommes de lettres, les artistes, l'armée, les scientifiques, les politiques, les religieux, les professions juridiques, les explorateurs/voyageurs et les indéfinis. En effet, il existe une multitude de fonctions que nous avons trouvé plus judiscieux de ranger dans des catégories socio-professionnelles pour mieux organiser la base et pour sa clarté . Ainsi, un missionnaire ou un jésuite seront classés dans la catégorie "religieux".  
 
-Il est intéressant de connaître la fonction de l'auteur, mais bien souvent, certains auteurs possèdent plusieurs fonctions. Nous avons donc décidé, dans la table *FONCTIONS*, de distinguer la fonction principale de chaque auteur à l'aide de valeurs booléennes illustrées par la colonne "Categorie_principale". En effet, on considérera la valeur booléenne 1 comme étant la fonction principale et la valeur booléenne 0 comme étant les fonctions secondaires. 
+Dans la table *FONCTIONS*, chaque auteur est identifié par un "ID_fonction" unique (clé primaire). On connaît également, à travers ses attributs, l'intulé de la fonction, la catégorie de cette fonction ou encore le lieu de son exercice. Cette table est rattachée à la table *AUTEURS* par la clé étrangère "Ref_auteur" ce qui nous permet d'avoir des informations sur l'auteur, autrement dit, celui qui exerce la fontion. 
 
-Requête SQL permettant de connaître la fonction principale pour chaque auteur :  
+Il est intéressant de connaître la fonction de l'auteur, mais bien souvent, certains auteurs exercent plusieurs fonctions. Nous avons donc décidé, dans la table *FONCTIONS*, de distinguer la fonction principale de chaque auteur à l'aide de valeurs booléennes illustrées par la colonne "Categorie_principale". En effet, on considérera la valeur booléenne 1 comme étant la fonction principale et la valeur booléenne 0 comme étant les fonctions secondaires. 
+
+Voici la requête SQL permettant de connaître la fonction principale pour chaque auteur :  
 
 `SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction FROM FONCTIONS WHERE Categorie_principale = 1`
