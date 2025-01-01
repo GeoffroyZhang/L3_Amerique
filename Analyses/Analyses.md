@@ -60,7 +60,9 @@ GROUP BY Categorie_fonction`
 Nous pouvons souligner que les auteurs sont exclusivement masculins. Il est compliqué d'expliquer cela en quelques mots, évoquons simplement qu'il était plus difficile pour les femmes de pouvoir publier leurs travaux.Ce sont essentiellement des hommes qui se sont rendus aux États-Unis. Dans le tableau si dessus nous pouvons voir que les fonctions exerçaient sont masculinisées. Il faut néanmoins évoquer le fait qu'il y a des femmes qui exercent ces métiers.  
 
     Evolution des fonctions
-
+Avec la requête suivante : `SELECT Intitule_fonction FROM Fonctions WHERE Intitule_fonction LIKE '%Jésuite%' 
+OR Intitule_fonction LIKE '%jésuite%'` 
+Nous pouvons compter le nombre de jésuite. Il y a 12 jésuites parmi les 31 religieux que nous avons répertiorié. La présence de religieux puis leur disparition progressive au fil des siècles peut s'expliquer par le fait que lors de la "découverte" de l'Amérique des religieux fuyant l'intolérance en Europe partent se réfugier en Amérique. Il y a également des missionnaires comme les jésuites, qui s'y rendent afin d'évangéliser les populations autochtones. 
     
 
     Focus sur les ouvrages parlant des Etats-Unis au XIXe
