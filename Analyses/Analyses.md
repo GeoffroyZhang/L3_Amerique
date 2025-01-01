@@ -62,7 +62,7 @@ Nous pouvons souligner que les auteurs sont exclusivement masculins. Il est comp
     Evolution des fonctions
 Avec la requête suivante : `SELECT Intitule_fonction FROM Fonctions WHERE Intitule_fonction LIKE '%Jésuite%' 
 OR Intitule_fonction LIKE '%jésuite%'` 
-Nous pouvons compter le nombre de jésuite. Il y a 12 jésuites parmi les 31 religieux que nous avons répertiorié. La présence de religieux puis leur disparition progressive au fil des siècles peut s'expliquer par le fait que lors de la "découverte" de l'Amérique des religieux fuyant l'intolérance en Europe partent se réfugier en Amérique. Il y a également des missionnaires comme les jésuites, qui s'y rendent afin d'évangéliser les populations autochtones. 
+nous pouvons compter le nombre de jésuites. Il y a 12 jésuites parmi les 31 religieux que nous avons répertiorié. La présence de religieux puis leur disparition progressive au fil des siècles peut s'expliquer par le fait que suite à la "découverte" de l'Amérique des religieux fuyant l'intolérance en Europe partent se réfugier en Amérique. Il y a également des missionnaires comme les jésuites, qui s'y rendent afin d'évangéliser les populations autochtones. 
     
 
     Focus sur les ouvrages parlant des Etats-Unis au XIXe
