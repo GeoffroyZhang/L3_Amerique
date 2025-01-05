@@ -57,7 +57,7 @@ GROUP BY Categorie_fonction`
 |Scientifique|32|
 |Voyageur|11|
 
-Nous pouvons souligner que les auteurs sont exclusivement masculins. Il est compliqué d'expliquer cela en quelques mots, évoquons simplement qu'il était plus difficile pour les femmes de pouvoir publier leurs travaux.Ce sont essentiellement des hommes qui se sont rendus aux États-Unis. Dans le tableau si dessus nous pouvons voir que les fonctions exerçaient sont masculinisées. Il faut néanmoins évoquer le fait qu'il y a des femmes qui exercent ces métiers.  
+Nous pouvons souligner le fait que les auteurs sont exclusivement masculins. Il est compliqué d'expliquer cela en quelques mots, évoquons simplement qu'il était plus difficile pour les femmes de pouvoir publier leurs travaux.Ce sont essentiellement des hommes qui se sont rendus aux États-Unis. Dans le tableau si dessus nous pouvons voir que les fonctions exerçaient sont masculinisées. Il faut néanmoins évoquer le fait qu'il y a des femmes qui exercent ces métiers.  
 
     Evolution des fonctions
 Avec la requête suivante : `SELECT Intitule_fonction FROM Fonctions WHERE Intitule_fonction LIKE '%Jésuite%' 
@@ -65,6 +65,20 @@ OR Intitule_fonction LIKE '%jésuite%'`
 nous pouvons compter le nombre de jésuites. Il y a 12 jésuites parmi les 31 religieux que nous avons répertiorié. La présence de religieux puis leur disparition progressive au fil des siècles peut s'expliquer par le fait que suite à la "découverte" de l'Amérique des religieux fuyant l'intolérance en Europe partent se réfugier en Amérique. Il y a également des missionnaires comme les jésuites, qui s'y rendent afin d'évangéliser les populations autochtones. 
     
 
-    Focus sur les ouvrages parlant des Etats-Unis au XIXe
 
-    Analyse des régions (via les sujets)
+
+| Région | Nombre d'ouvrages publiés par région|
+| ---------- | -------------|
+|Canada |44|
+|Est des Etats-Unis |38|
+|Ouest Etats-Unis|37|
+|Louisiane |21|
+|Amérique latine |14|
+
+Nous nous sommes concentrés sur les ouvrages rédigés au XIXe siècle élaborer ce tableau. Les ouvrages répertioriés évoquent le lien entre la France et les Etats-Unis mais aussi la vision que les Français ont de ces derniers. 
+
+
+
+
+
+    
