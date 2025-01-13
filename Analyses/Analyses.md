@@ -66,19 +66,27 @@ nous pouvons compter le nombre de jésuites. Il y a 12 jésuites parmi les 31 re
     
 
 
+    Analyse des régions (via les sujets)
 
-| Région | Nombre d'ouvrages publiés par région|
-| ---------- | -------------|
-|Canada |44|
-|Est des Etats-Unis |38|
+Nombre d'ouvrages par région
+|Région|Nombre d'ouvrage|
+|---|---|
+|NULL|152|
+|Canada|44|
+|Est Etats-Unis|38|
 |Ouest Etats-Unis|37|
-|Louisiane |21|
-|Amérique latine |14|
+|Louisiane|21|
+|Antilles ou Amérique latine|14|
 
-Nous nous sommes concentrés sur les ouvrages rédigés au XIXe siècle élaborer ce tableau. Les ouvrages répertioriés évoquent le lien entre la France et les Etats-Unis mais aussi la vision que les Français ont de ces derniers. 
+Evolution de l'intérêt pour certaines régions au fil des siecles 
 
-
-
-
-
+|Région |16|17|18|19|20|NULL|TOTAL|
+|----|----|----|----|----|----|----|----|
+|Antilles ou Amérique Latine|0 |18,18%|17,07%|1,43%| 0| 0|4,59%|
+|Canada| 0|45,45%|7,32%|14,29%|4,35%|0 |14,43%|
+|Est Etats-Unis|100%|0 |26,83%|11,90%|0 |12,50%|12,46%|
+|Louisiane| 0|4,55%|19,51%|4,29%|13,04%|0 |6,89%|
+|NULL|0 |31,82%|29,27%|53,33%|60,87%|75%|49,51%|
+|Ouest Etats-Unis| 0| 0|0 |14,76%|21,74%|12,50%|12,13%|
+|TOTAL|100%|100%|100%|100%|100%|100%|100%|
     
