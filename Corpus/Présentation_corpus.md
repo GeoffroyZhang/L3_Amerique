@@ -7,7 +7,7 @@ Cette collaboration avec la Bibliothèque du Congrès s’inscrit dans une colla
 
 
 ## Informations sur le corpus 
-Le corpus contient 309 ouvrages issu des 3 siècles considérer. Pour également 237 d'auteurs. 
+Le corpus contient 309 ouvrages issu des 3 siècles considérer. Il y a une très grande diversité de sujets qu’ils soient économiques, religieux, géographique, politique... Dans une aussi grande diversité d’auteurs (237 en tout) venant de tout horizon et de toutes classes sociales. D’ouvrages de marins, en passant par des ouvrages de jésuites, d’écrivains, ou d’aventuriers. Ce corpus regroupe une telle diversité globale qu’il est un outil de travail rêvé pour n’importe quel sujet ayant un lien avec lui.   
 
 ### Source des données
 Ces données ont été récoltés via le catalogue générale ligne de la BNF via les notices d’ouvrages de ce corpus (https://catalogue.bnf.fr/affinerAdv.do?mots0=ALL%3B1%3B0%3B&mots1=ALL%3B0%3B0%3B&pageRech=rav&corpus=FranceAm&listeAffinages=FacCor_FranceAm&afficheRegroup=false&nbResultParPage=10). 
