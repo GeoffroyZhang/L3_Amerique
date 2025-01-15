@@ -50,12 +50,54 @@ Nous pouvons voir qu'il y a une diminution du nombre moyen de pages puis une aug
 | Religieux | 1 (3 %) | 33 (97 %) |
 | Voyageur | 0 | 14 (100 %) |
 
-    Analyse des auteurs
+    Nous avons fait une analyse des fonctions des auteurs grâce à la requête suivante :
+    
+`SELECT Categorie_fonction, COUNT(*) FROM FONCTIONS  
+WHERE Categorie_principale = 1
+GROUP BY Categorie_fonction`
+
+| Fonction | Nombre d'auteurs qui l'exerce|
+| ---------- | -------------|
+| Artistes |10|
+|Homme d'affaires|7|
+|Hommes de lettres|57|
+|Juriste|11|
+|Militaire|22|
+|Politique ou administrateur|15|
+|Religieux|31|
+|Scientifique|32|
+|Voyageur|11|
+
+Nous pouvons souligner le fait que les auteurs sont exclusivement masculins. Il est compliqué d'expliquer cela en quelques mots, évoquons simplement qu'il était plus difficile pour les femmes de pouvoir publier leurs travaux.Ce sont essentiellement des hommes qui se sont rendus aux États-Unis. Dans le tableau si dessus nous pouvons voir que les fonctions exerçaient sont masculinisées. Il faut néanmoins évoquer le fait qu'il y a des femmes qui exercent ces métiers.  
 
     Evolution des fonctions
+Avec la requête suivante : `SELECT Intitule_fonction FROM Fonctions WHERE Intitule_fonction LIKE '%Jésuite%' 
+OR Intitule_fonction LIKE '%jésuite%'` 
+nous pouvons compter le nombre de jésuites. Il y a 12 jésuites parmi les 31 religieux que nous avons répertiorié. La présence de religieux puis leur disparition progressive au fil des siècles peut s'expliquer par le fait que suite à la "découverte" de l'Amérique des religieux fuyant l'intolérance en Europe partent se réfugier en Amérique. Il y a également des missionnaires comme les jésuites, qui s'y rendent afin d'évangéliser les populations autochtones. 
+    
 
-    Auteurs presque exclusivement masculins
-
-    Focus sur les ouvrages parlant des Etats-Unis au XIXe
 
     Analyse des régions (via les sujets)
+
+Nombre d'ouvrages par région
+|Région|Nombre d'ouvrage|
+|---|---|
+|NULL|152|
+|Canada|44|
+|Est Etats-Unis|38|
+|Ouest Etats-Unis|37|
+|Louisiane|21|
+|Antilles ou Amérique latine|14|
+
+Evolution de l'intérêt pour certaines régions au fil des siecles 
+
+|Région |16|17|18|19|20|NULL|TOTAL|
+|----|----|----|----|----|----|----|----|
+|Antilles ou Amérique Latine|0 |18,18%|17,07%|1,43%| 0| 0|4,59%|
+|Canada| 0|45,45%|7,32%|14,29%|4,35%|0 |14,43%|
+|Est Etats-Unis|100%|0 |26,83%|11,90%|0 |12,50%|12,46%|
+|Louisiane| 0|4,55%|19,51%|4,29%|13,04%|0 |6,89%|
+|NULL|0 |31,82%|29,27%|53,33%|60,87%|75%|49,51%|
+|Ouest Etats-Unis| 0| 0|0 |14,76%|21,74%|12,50%|12,13%|
+|TOTAL|100%|100%|100%|100%|100%|100%|100%|
+    
