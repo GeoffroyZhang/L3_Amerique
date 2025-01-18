@@ -27,9 +27,15 @@ Une fois ces données récupérer nous avons travaillé sur le code source HTML 
 
 3. Nous avons fini par extraire des “Notices rameaux”, le numéro de la notice, son intitulé, les catégories qui lui sont associés (ce sont de grands thèmes généraux), et les thèmes spécifiques (qui sont plus spécifique, ciblés).  Exemple : `<div class="notice line" id="noticeNum">` (ligne affilié au numéro de la notice).
 
-
-Récupération faite avec un script Python (O. Julien)
-
-Récupération des textes océrisés
-
+## Autres pages du rapport
 [Page de présentation](/Présentation.md)
+
+[Structure détaillée du corpus](/Analyses.md)
+
+[Structure de la base de données](/BDD.md)
+
+[Conclusion](/Conclusion.md)
+  
+
+
+
