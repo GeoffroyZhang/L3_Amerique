@@ -185,3 +185,15 @@ Il est intéressant de connaître la fonction de l'auteur, mais bien souvent, ce
 Voici la requête SQL permettant de connaître la fonction principale pour chaque auteur :  
 
 `SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction FROM FONCTIONS WHERE Categorie_principale = 1`
+
+[Page de présentation](/Présentation.md)
+
+[Structure détaillée du corpus](/Analyses.md)
+
+[Présentation du corpus](/Corpus.md)
+
+[Conclusion](/Conclusion.md)
+  
+
+
+ 
