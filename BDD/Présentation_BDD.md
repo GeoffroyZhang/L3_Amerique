@@ -194,9 +194,9 @@ SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction 
 
 [Page de présentation](/Présentation.md)
 
-[Structure détaillée du corpus](https://github.com/L3_Amerique/blob/main/Analyses/Analyses.md)
+[Structure détaillée du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Analyses/Analyses.md)
 
-[Présentation du corpus](/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
+[Présentation du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
 
 [Conclusion](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Conclusion/Conclusion.md)
   
