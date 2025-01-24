@@ -103,11 +103,11 @@ Evolution de l'intérêt pour certaines régions au fil des siecles
 
 [Page de présentation](/Présentation.md)
 
-[Structure de la base de données](/BDD.md)
+[Structure détaillée du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/BDD/Présentation_BDD.md)
 
-[Présentation du corpus](/Corpus.md)
+[Présentation du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
 
-[Conclusion](/Conclusion.md)
+[Conclusion](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Conclusion/Conclusion.md)
   
 
 
