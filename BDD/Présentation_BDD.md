@@ -196,7 +196,7 @@ SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction 
 
 [Structure détaillée du corpus](blob/main/Analyses/Analyses.md)
 
-[Présentation du corpus](blob/main/Corpus/Présentation_corpus.md)
+[Présentation du corpus](/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
 
 [Conclusion](blob/main/Conclusion/Conclusion.md)
   
