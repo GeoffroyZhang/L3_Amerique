@@ -198,7 +198,7 @@ SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction 
 
 [Présentation du corpus](/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
 
-[Conclusion](blob/main/Conclusion/Conclusion.md)
+[Conclusion](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Conclusion/Conclusion.md)
   
 
 
