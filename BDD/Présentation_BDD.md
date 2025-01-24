@@ -194,11 +194,11 @@ SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction 
 
 [Page de présentation](/Présentation.md)
 
-[Structure détaillée du corpus](Analyses/Analyses.md)
+[Structure détaillée du corpus](sous_dossier/Analyses.md)
 
-[Présentation du corpus](Corpus/Présentation_corpus.md)
+[Présentation du corpus](sous_dossier/Présentation_corpus.md)
 
-[Conclusion](Conclusion/Conclusion.md)
+[Conclusion](sous_dossier/Conclusion.md)
   
 
 
