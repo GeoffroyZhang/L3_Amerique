@@ -194,7 +194,7 @@ SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction 
 
 [Page de présentation](/Présentation.md)
 
-[Structure détaillée du corpus](blob/main/Analyses/Analyses.md)
+[Structure détaillée du corpus](https://github.com/L3_Amerique/blob/main/Analyses/Analyses.md)
 
 [Présentation du corpus](/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
 
