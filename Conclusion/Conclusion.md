@@ -9,5 +9,5 @@
 
 [Présentation du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
 
-[Conclusion](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/BDD/Présentation_BDD.md)
+[Présentation de la BDD](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/BDD/Présentation_BDD.md)
 
