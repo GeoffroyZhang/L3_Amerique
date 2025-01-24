@@ -159,7 +159,7 @@ Nous avons également, dans la table *AUTEURS* ajouté manuellement les auteurs 
 
 Avec l'utilisation du logiciel de textométrie TXM, nous avons pu situer les principales zones géographiques couvertes par les ouvrages du corpus. Nous avons sélectionné les lieux qui revenaient le plus souvent afin de définir des catégories géographiques. Nous avons ainsi identifié plusieurs catégories géographiques que sont : les régions de l'ouest des Etats-Unis, les Antilles/îles, les régions de l'est des Etats-Unis, l'Amérique latine, la Louisiane et le Canada. On associe une région principale à chaque texte de la table *TEXTES*. Enfin, avec l'aide de requêtes SQL, nous avons mis à jour la base de données et notamment la colonne "Region" de la table *TEXTES* avec la requête suivante : 
 
-``` r
+``` 
 SELECT * FROM TEXTES 
 UPDATE TEXTES SET Region = 'Nom de la catégorie' 
 WHERE Titre LIKE '%Mot recherché%'
@@ -167,7 +167,7 @@ WHERE Titre LIKE '%Mot recherché%'
 
 Par exemple, pour les ouvrages parlant des Antilles/îles nous utilisons la requête suivante : 
 
-``` r
+``` 
 SELECT * FROM TEXTES
 UPDATE TEXTES SET Region ='Antilles/îles'
 WHERE Titre LIKE '%Antilles%'
@@ -188,17 +188,17 @@ Il est intéressant de connaître la fonction de l'auteur, mais bien souvent, ce
 
 Voici la requête SQL permettant de connaître la fonction principale pour chaque auteur :  
 
-``` r
+``` 
 SELECT ID_fonction, Intitule_fonction, Categorie_principale, Categorie_fonction FROM FONCTIONS WHERE Categorie_principale = 1
 ``` 
 
 [Page de présentation](/Présentation.md)
 
-[Structure détaillée du corpus](/Analyses.md)
+[Structure détaillée du corpus](docs/Analyses.md)
 
-[Présentation du corpus](/Corpus.md)
+[Présentation du corpus](docs/Présentation_corpus.md)
 
-[Conclusion](/Conclusion.md)
+[Conclusion](docs/Conclusion.md)
   
 
 
