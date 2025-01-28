@@ -23,3 +23,12 @@ Afin de faire ce travail, nous allons travailler sur un corpus de texte traitant
 Afin d'étudier ce corpus, nous avons constitué une base de données relationnelle dans le logiciel Libre Office base. Après avoir recoder plusieurs variables (nous y reviendrons plus tard), notamment a l'aide du logiciel TXM, afin que notre base de données soit la plus complète
 ## Problématique
 ### références a R. Rémond, McKenzie, Moretti
+
+
+[Structure détaillée du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Analyses/Analyses.md)
+
+[Présentation de la BDD](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/BDD/Présentation_BDD.md)
+
+[Présentation du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
+
+[Conclusion](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Conclusion/Conclusion.md)
