@@ -21,7 +21,7 @@ CF rémond intro deuxième partie
 CF rémond intro deuxième partie
 ## Sources des données (Catalogue de la BnF) (rapide):
 
-Afin de faire ce travail, nous allons travailler sur un corpus de texte traitant de l'Amérique et des Etats-Unis d'Amérique, corpus constitué par la Bibliothéque Nationale de France (BNF) regroupant plus de 300 textes. Ces textes, ont été publiés en francais, sont écrits en grande majorité par des auteurs francophones, et permettent de faire une étude de l'approche et des rapports que les auteurs ont avec le continent américain. 
+Afin de faire ce travail, nous allons travailler sur un corpus de texte traitant de l'Amérique et des Etats-Unis d'Amérique, corpus constitué par la Bibliothéque Nationale de France (BNF) regroupant plus de 300 textes. Ces textes, ont été publiés en francais, sont écrits en grande majorité par des auteurs francophones, et permettent de faire une étude de l'approche et des rapports que les auteurs ont avec le continent américain. Parmi c'est texte nous pouvons trouver des roman fictionnel, des articles journalistiques, mais aussi des document technique, ou même scientifiques 
 ## Outils/ méthodes, ( distant reading de moretti)
 Afin d'étudier ce corpus, nous avons constitué une base de données relationnelle dans le logiciel Libre Office base. Après avoir recoder plusieurs variables (nous y reviendrons plus tard), notamment a l'aide du logiciel TXM, afin que notre base de données soit la plus complète possible. 
 ## Problématique
