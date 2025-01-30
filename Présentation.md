@@ -9,7 +9,7 @@ Nous travaillerons sur un corpus de texte traitant de l'Amérique, nous reviendr
 
 ### Contextualisation : 
 
-#### Liens entre la France et les Etats-Unis (cf. Rémond):
+#### Liens entre la France et les Etats-Unis:
 
 
 La France et le continent américain ont un lien privilégié. En effet, dans un premier temps entre les XVIème et XVIIIème siècle, le lien entre le royaume de France et le nouveau continent se restreignent à la decouverte par Jaques Cartier du golf du St-Laurent et de la region du Quebec au tournant de l'ère moderne. En effet, l'explorateur, en recherchant une voie de navigation vers les indes, decouvre le fleuve Saint-Laurent, en 1554. 
@@ -17,7 +17,7 @@ La France et le continent américain ont un lien privilégié. En effet, dans un
 Dans un premier temps oublié des pouvoirs politiques, une phase d'implantation de colonie debute au XVIIème siecle par les Français. C'est seulement en 1608 que la première colonie de peuplement française est établie par Samuel de Champlain. Cette première colonie se situe dans la région du Québec et prend le nom de Nouvelle-France. Il s'agit du premier pied à terre du Royaume sur le nouveau continent. Rapidement la colonie s'etend, comprenant le Canada, l'île de Terre-Neuve et la Louisiane. Cependant, l'influence française sur le continent est considérablement reduite à la fin de la Guerre de Sept Ans. En effet, ce conflit abouti au Taité de Paix de Paris, cédant à l'Angleterre le Canada et certaines îles des Antilles. 
 
 
-#### Contexte politique américain
+#### Contexte politique américain:
 
 La guerre d’indépendance des Etats-Unis, est le point de commencement des relations avec la France. Bien que ce conflit soit aussi l’acte fondateur du pays, il l’est aussi de de l’alliance entre la vieille puissance européenne et les nouveaux états américains. Par la suite les deux nations conserveront un lien étroit durant la période révolutionnaire, en s’inspirant mutuellement.
 
