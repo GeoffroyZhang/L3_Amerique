@@ -7,19 +7,29 @@ Nous travaillerons sur un corpus de texte traitant de l'amérique, nosu reviendr
 ### Contextualisation : 
 
 #### Liens entre la France et les Etats-Unis (cf. Rémond):
+
+
 La france et le continent américain ont un lien privilégié. En effet, dans un premier temps entre les XVIème et XVIIIème siècle, le lien entre le royaume de france et le nouveau continent se restreignent à a la decouverte par Jaques Cartier de la baie d'Hudson et de la region du quebec au tournant de l'ere moderne. en effet, l'explorateur, en recherchant une voie de navigation vers les indes, decouvre le fleuve Saint-Laurent, en 1554. 
+
 Dans un premier temps oublié des pouvoirs politique, une phase d'implantation de colonie debute au XVIIème siecle par les français. C'est seulement en 1608 que la première colonie de peuplement française est établie par Samuel de Champlain. Cette première colonie de peuplement se situe dans la région du Québec et prend le nom de Nouvelle-France. Il s'agit du premier pied a terre du Royaume de France sur le nouveaux monde. rapidement la colonie s'etend, comprenant l'Acadie ( a preciser), le Canada, l'île de Terre-Neuve et la Louisiane. Cependant, L'influence française sur le continent est considérablement reduite a la fin de la Guerre de Sept Ans. En effet, ce conflit abouti au Taité de Paix de Paris, cedant a l'angleterre le Canada et certaines îles des Antilles. 
 
 
 ( liste des colonie et implantation difficile)
 (guerre d'independance et role de la france)
 #### Contexte politique américain
+
 fin de la guerre d'indépendance et lien avec la france et la revolution francaise
+
 #### Développement de l'édition et du lectorat au XIXe siècle.  
+
 Pour expliquer la presence de tels textes, nous nous appuierons sur l'ouvrage de René Rémond, "Les Etats-Unis devant l'opinion Française" publié en 1962. bien que cet ouvrage soit ancien, et que la periode de son étude soit plus restreint que les notre, il se concentre sur une periode entre 1815 et 1852, c'est indication d'introduction de la seconde partie de son ouvrage, nous sont très utiles pour comprendre le contexte de production des textes que nous étudions. La seconde partie de sa reflexion, se concentre sur l'aspect que nous allons etudier, ou du moins sen rapproche grandement, car dans celle ci, il etudie l'évolution des textes publiés en France et abordant les tout nouveaux Etats-Unis d'Amérique. Dans son introduction donc, il clarifie le cadre de production des ouvrages qu'il etudie. 
+
 Au XIXème siècle, le fait est que l'imprimé, nous entendons ici tout les ecrits, texte, journaux et autres gravures produite par une entreprise, ayant pour but de vendre, est predominant dans le paysage culturel. Il parvient même à la reflexion que "la primauté de l’imprimé est presque un monopole". Il est vrai que l'imprimé devient le medium principal au début du siècle. Il maintiendra cette position tout au long du siècle: les journaux fleurissent, tout comme les livres, les auteurs et les textes publiés. 
+
 cependant, le nombre d'ouvrage ou de production publié, ne dit en rien du nombre de lecteur et du succès de l'ouvrage. Comme René Rémond l'explique dans son introduction, un livre édité n'est pas un livre vendu, il est produit dans cette optique, mais ne l'est pas forcément. De plus, il rappelle qu'un livre acheté n'est pas forcément un livre lu. Une nouvelle fois un ouvrage ou un texte peut etre acheté par un individus et ne jamais être lu par celui ci. 
+
 Pour mesurer le succès d'un ouvrage, René Rémond pose sa reflexion, dans un premier temps, sur le nombre de réédition que connait l'oeuvre. si l'ouvrage est réédité, c'est que celui ci a plu et que la demande est grande, il y a donc statistiquement plus de lecteur de cet ouvrage que de lecteur d'un ouvrage qui a été peu edité. Dans un second temps, il mesure aussi le succès d'un ouvrage, sur le nombre de citation et d'article de journaux a son sujet. Si l'ouvrage est beaucoup cité alors, l'ouvrage connait plus de succès et son lectorat s'agrandi, car il a été lu par ses citeurs, dans un premiers temps, et par les personnes qui se sont interressé a ce dernier, dans un second temps. 
+
 l'imprimé au XIXème siècle, connait un grand dévellopement, ce dernier se caractérisant par la place prépondérente prise par ce medium, au détriment d'autres formes d'informations, René Rémond cite entre autre un certain déclin de la culture orale de l'information. La lecture et l'information passe désormais par l'imprimé, allant de paire avec un dévellopement du lectorat. 
 
 ## Sources des données (Catalogue de la BnF) (rapide):
