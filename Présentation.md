@@ -14,11 +14,12 @@ La france et le continent américain ont un lien privilégié. En effet, dans un
 Dans un premier temps oublié des pouvoirs politique, une phase d'implantation de colonie debute au XVIIème siecle par les français. C'est seulement en 1608 que la première colonie de peuplement française est établie par Samuel de Champlain. Cette première colonie de peuplement se situe dans la région du Québec et prend le nom de Nouvelle-France. Il s'agit du premier pied a terre du Royaume de France sur le nouveaux monde. rapidement la colonie s'etend, comprenant l'Acadie ( a preciser), le Canada, l'île de Terre-Neuve et la Louisiane. Cependant, L'influence française sur le continent est considérablement reduite a la fin de la Guerre de Sept Ans. En effet, ce conflit abouti au Taité de Paix de Paris, cedant a l'angleterre le Canada et certaines îles des Antilles. 
 
 
-( liste des colonie et implantation difficile)
-(guerre d'independance et role de la france)
 #### Contexte politique américain
 
-fin de la guerre d'indépendance et lien avec la france et la revolution francaise
+La guerre d’indépendance des Etats-Unis, est le point central du commencement des relation avec la France. Bien que ce conflit soit aussi l’acte fondateur du pays, il l’est aussi de de l’alliance entre la vieille puissance européenne et le nouvel état américain. Par la suite les deux nations conserveront un lien étroit durant la période révolutionnaire, en s’inspirant mutuellement.
+
+Le tournant napoléonien et surtout la Restauration, viennent changer ces rapports. L’opinion française, perçoit les Etats-Unis comme une jeune et émergente nation, bien loin des grandes puissances européennes. Le pays garde son image révolutionnaire, en décalage avec les puissances européennes monarchistes. Tel est l’état des lieux des rapports entre les deux pays qui vont nous intéresser dans ce projet. 
+
 
 #### Développement de l'édition et du lectorat au XIXe siècle.  
 
