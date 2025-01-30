@@ -45,9 +45,9 @@ Le point central de cette étude sera donc d’étudier les textes et les relati
 
 Afin de faire ce travail, nous allons nous interesser sur un corpus de texte traitant de l'Amérique et des Etats-Unis d'Amérique. Ce corpus est le fruit de la collaboration entre la BNF et plus de 18 institutions américaines, francaises, canadiennes et britanniques. Nous nous concentrerons sur les textes écrits en français au cours de cette étude. C'est pour cette raison que nous nous concentrerons sur environ 300 textes et leur auteur. Ces textes, ont été publiés en francais, sont écrits en grande majorité par des auteurs francophones, et permettent de faire une étude de l'approche et des rapports que les auteurs ont avec le continent américain. Parmi ces texte nous pouvons trouver des romans fictionnels, des articles journalistiques, mais aussi des documents techniques, ou même scientifiques. De même leur période de production est grande, nous y trouvons des textes pouvant daté du XVIème siecle, les plus anciens documents date de la decouverte du nouveaux continent, et le plus récent date de 1929. Cependant, lors d'une étude succincte, nous remarquons que les textes de ce corpus se concentre avant tout sur le XIXème siècle. c'est pour cette raison que notre étude se concentrera principalement sur ce siècle. Par ailleurs comme nous l'avons vu précédemment, ce siècle est aussi celui de l'essort de l'imprimer et des relations entre les Etats-Unis et de la France, l'étude de cces textes en sera alors que plus pertinente. 
 
-## Outils/ méthodes, ( distant reading de moretti)
+## Outils
 
-Afin d'étudier ce corpus, nous avons constitué une base de données relationnelle dans le logiciel Libre Office base. Après avoir recoder plusieurs variables (nous y reviendrons plus tard), notamment a l'aide du logiciel TXM, afin que notre base de données soit la plus complète possible. 
+Afin d'étudier ce corpus, nous avons constitué une base de données relationnelle dans le logiciel Libre Office base. Après avoir recoder plusieurs variables (nous y reviendrons plus tard), notamment à l'aide du logiciel TXM, nous pourrons mener une analyse approfondie et la plus complète possible de ce corpus. 
 
 ## Problématique
 
