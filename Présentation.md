@@ -53,3 +53,12 @@ Afin d'étudier ce corpus, nous avons constitué une base de données relationne
 
 La finalité de ce dossier résidera dans l'étude des relations que portent les auteurs publiés en France, dont le point de vue est Français ou proche de celui des Français, avec les Etats-Unis d'Amérique, leurs territoires et leur population. 
 
+### Table des matières
+
+[Structure détaillée du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Analyses/Analyses.md)
+
+[Présentation de la BDD](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/BDD/Présentation_BDD.md)
+
+[Présentation du corpus](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Corpus/Présentation_corpus.md)
+
+[Conclusion](https://github.com/GeoffroyZhang/L3_Amerique/blob/main/Conclusion/Conclusion.md)
